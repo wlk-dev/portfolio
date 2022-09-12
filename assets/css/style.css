@@ -6,7 +6,9 @@
 }
 
 header {
-    padding: 1.5% 26%;
+    position: fixed;
+    width: 100%;
+    padding: 1.5% 28%;
     background-color: bisque;
     box-shadow: 0 0 10px antiquewhite;
 }
