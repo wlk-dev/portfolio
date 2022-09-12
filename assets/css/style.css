@@ -5,13 +5,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-body {
-    padding: 0 25%;
-}
-
 header {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 1.5% 15%;
 }
 
 header nav a {
@@ -24,7 +19,7 @@ header nav a {
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
+    padding: 5% 15%;
 }
 
 
@@ -34,20 +29,31 @@ h2.main-header {
 }
 
 section {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+section.content {
+    margin: 5em 0;
+    padding: 0 17%;
+}
+
+section.form-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
 }
 
 form {
-    margin-top: 5em;
-    padding: 2em;
+    padding: 5%;
     border: 1px solid black;
     text-align: center;
 }
 
-
 input, textarea {
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 
