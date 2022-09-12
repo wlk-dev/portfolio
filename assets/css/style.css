@@ -6,14 +6,20 @@
 }
 
 header {
-    padding: 1.5% 15%;
+    padding: 1.5% 26%;
+    background-color: bisque;
+    box-shadow: 0 0 10px antiquewhite;
 }
 
 header nav a {
-    margin-right: 1em;
+    margin-right: 2.5%;
     font-size: larger;
     text-decoration: none;
     color: black;
+}
+
+body {
+    background-color: cadetblue;
 }
 
 main {
@@ -25,7 +31,7 @@ main {
 
 h2.main-header {
     font-size: x-large;
-    margin-bottom: 1em;
+    margin-bottom: 3%;
 }
 
 section {
@@ -36,42 +42,62 @@ section {
 }
 
 section.content {
-    margin: 5em 0;
+    margin: 3% 0;
     padding: 0 17%;
+    
 }
 
 section.form-entry {
     display: flex;
     flex-direction: column;
     padding: 0 5%;
+    
 }
 
 form {
     padding: 5%;
-    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(61, 188, 192);
     text-align: center;
+    background-color:antiquewhite
 }
 
 input, textarea {
-    margin: 2em 0;
+    margin: 2.5% 32%;
 }
+
+textarea {
+    max-width: fit-content;
+
+}
+
+/* textarea {
+    margin: 2.5% 20%;
+} */
 
 
 /* Footer Styling */
 
 footer {
     text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    box-shadow: 0 0 10px antiquewhite;
+    background-color: bisque;
 }
 
 footer h2 {
+    display: inline;
     font-size: 18px;
+    border: 1px dotted black;
+    padding: 0 .5%;
 }
 
-footer small {
-    font-size: 16px
+footer h2 a {
+    text-decoration: none;
+    color: black;
 }
 
 #dev-name {
-    color: palevioletred;
+    color:coral;
     font-weight: 500;
 }
