@@ -11,25 +11,51 @@
 <body>
     <header>
         <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#about">About</a>
+            <a href="#work">Works</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section></section> <!-- about -->
-        <section></section> <!-- work -->
-        <section></section> <!-- contact -->
+        <section id="about">
+            <h2>About Me</h2>
+        </section> 
+
+        <section id="work">
+            <h2>My work</h2>
+        </section>    
+
+        <section id="contact">
+            <form action="">
+                <fieldset>
+
+                    <h2>Contact Me</h2>
+                    <section id="email">
+                        <label>Email: </label>
+                        <input type="email" required />
+                    </section>
+        
+                    <section id="name">
+                        <label>Fullname: </label>
+                        <input type="text" required />
+                    </section>
+                    
+                    <section>
+                        <label for="inquiries">Inquiry</label>
+                        <textarea name="" id="inquiries" cols="30" rows="5" placeholder="..."></textarea>
+                    </section>
+
+                </fieldset>
+            </form>
+
+        </section> 
     </main>
 
-    <aside>
-
-    </aside>
-    
-
     <footer>
-
+        <h2>
+            Made by <a href="https://github.com/wlk-dev" target="_blank"><span id="dev-name">wlk-dev</span></a>.
+        </h2>
     </footer>
 
 </body>
