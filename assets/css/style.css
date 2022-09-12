@@ -5,12 +5,13 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-main {
-    padding: 2em 10%;
+body {
+    padding: 0 25%;
 }
 
 header {
-    padding: 2em 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 header nav a {
@@ -20,17 +21,39 @@ header nav a {
     color: black;
 }
 
-h2 {
-    font-size: x-large;
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
 }
 
 
+h2.main-header {
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-top: 5em;
+    padding: 2em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+input, textarea {
+    margin: 1em 0;
+}
 
 
 /* Footer Styling */
 
 footer {
-    margin: 0 45%;
     text-align: center;
 }
 
