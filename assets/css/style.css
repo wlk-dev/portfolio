@@ -26,13 +26,18 @@ header nav a:hover {
 }
 
 body {
-    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/background-image.jpg");
+    /* min-height: 100%; */
+    /* background-color: cadetblue; */
 }
 
 main {
     display: flex;
     flex-direction: column;
     padding: 5% 15%;
+    margin-top: 5%;
 }
 
 
@@ -43,13 +48,6 @@ h2.main-header {
     /* text-decoration: underline; */
 }
 
-section {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 div.card-holder {
     display: flex;
     flex-direction: row;
@@ -57,6 +55,9 @@ div.card-holder {
 }
 
 section.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     margin: 3% 13%;
 }
 
@@ -87,17 +88,15 @@ div.contact-card a:hover, div.contact-card a i:hover {
     color:coral
 }
 
-section.form-entry {
-    display: flex;
-    flex-direction: column;
-    padding: 0 5%;
-    
-}
-
 
 /* Footer Styling */
 
 footer {
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
     text-align: center;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -106,8 +105,8 @@ footer {
 }
 
 footer h2 {
-    display: inline;
-    font-size: 18px;
+    /* display: inline; */
+    font-size:  large;
     padding: 0 .5%;
 }
 
