@@ -7,6 +7,7 @@
 
 header {
     position: fixed;
+    z-index: 10;
     width: 100%;
     padding: 1.5% 15%;
     background-color: bisque;
@@ -40,18 +41,11 @@ main {
     margin-top: 5%;
 }
 
-
 h2.main-header {
     font-size: x-large;
     margin-bottom: 3%;
     text-shadow: 2px 2px coral
     /* text-decoration: underline; */
-}
-
-div.card-holder {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 section.content {
@@ -64,7 +58,49 @@ section.content {
 section.about, section.work, section.contact {
     padding: 4.5%;
     box-shadow: 0 0 10px black;
-    background-color:antiquewhite
+    background-color:antiquewhite;
+}
+
+section.about {
+    align-items: center;
+}
+
+section.about img {
+    margin-top: 2%;
+    max-width: 25vw;
+    max-height: 35vh;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+/* [About Me] image selector "logic" */
+.image2 {
+    display: none;
+}
+
+input[type="radio"] {
+    accent-color: grey;
+}
+
+#pict1[type="radio"]:checked ~ .image1 {
+    display: block;
+}
+
+#pict2[type="radio"]:checked ~ .image2 {
+    display: block;
+}
+
+#pict2[type="radio"]:checked ~ .image1 {
+    display: none;
+}
+/* [About Me] END */
+
+
+/*[Contact Me] cards and card holder */
+div.card-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 div.contact-card {
@@ -87,10 +123,9 @@ div.contact-card a:hover, div.contact-card a i:hover {
     text-decoration: none;
     color:coral
 }
-
+/*[Contact Me] END */
 
 /* Footer Styling */
-
 footer {
     bottom: 0;
     display: flex;
@@ -123,4 +158,4 @@ footer h2 a:hover {
     color:coral;
     font-weight: 500;
 }
-
+/* END */
