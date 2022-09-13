@@ -8,16 +8,21 @@
 header {
     position: fixed;
     width: 100%;
-    padding: 1.5% 28%;
+    padding: 1.5% 15%;
     background-color: bisque;
-    box-shadow: 0 0 10px antiquewhite;
+    box-shadow: 0 0 10px black;
 }
 
 header nav a {
-    margin-right: 2.5%;
+    margin-right: 5%;
     font-size: larger;
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: black
+}
+
+header nav a:hover {
+    color: coral;
+    text-decoration: overline;
 }
 
 body {
@@ -34,6 +39,8 @@ main {
 h2.main-header {
     font-size: x-large;
     margin-bottom: 3%;
+    text-shadow: 2px 2px coral
+    /* text-decoration: underline; */
 }
 
 section {
@@ -43,10 +50,41 @@ section {
     text-align: center;
 }
 
+div.card-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 section.content {
-    margin: 3% 0;
-    padding: 0 17%;
-    
+    margin: 3% 13%;
+}
+
+section.about, section.work, section.contact {
+    padding: 4.5%;
+    box-shadow: 0 0 10px black;
+    background-color:antiquewhite
+}
+
+div.contact-card {
+    padding-right: 2.5%;
+}
+
+div.contact-card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+div.contact-card a i {
+    margin-bottom: 15%;
+    color: black;
+}
+
+div.contact-card a:hover, div.contact-card a i:hover {
+    text-decoration: none;
+    color:coral
 }
 
 section.form-entry {
@@ -56,26 +94,6 @@ section.form-entry {
     
 }
 
-form {
-    padding: 5%;
-    box-shadow: 0 0 10px rgb(61, 188, 192);
-    text-align: center;
-    background-color:antiquewhite
-}
-
-input, textarea {
-    margin: 2.5% 32%;
-}
-
-textarea {
-    max-width: fit-content;
-
-}
-
-/* textarea {
-    margin: 2.5% 20%;
-} */
-
 
 /* Footer Styling */
 
@@ -83,14 +101,13 @@ footer {
     text-align: center;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-    box-shadow: 0 0 10px antiquewhite;
+    box-shadow: 0 0 10px black;
     background-color: bisque;
 }
 
 footer h2 {
     display: inline;
     font-size: 18px;
-    border: 1px dotted black;
     padding: 0 .5%;
 }
 
@@ -99,7 +116,12 @@ footer h2 a {
     color: black;
 }
 
+footer h2 a:hover {
+    color: coral;
+}
+
 #dev-name {
     color:coral;
     font-weight: 500;
 }
+

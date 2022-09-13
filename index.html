@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -18,35 +19,42 @@
     </header>
 
     <main>
-        <section class="content about">
+        <section id="about" class="content about">
             <h2 class="main-header">About Me</h2>
         </section> 
 
-        <section class="content works">
+        <section id="work" class="content work">
             <h2 class="main-header">My work</h2>
+
+            
         </section>    
+        
+        <section id="contact" class="content contact">
+            <h2 class="main-header">Contact Me</h2>
 
-        <section class="content">
-            <form action="" id="contact">
-                <h2 class="main-header">Contact Me</h2>
-
-                <section class="form-entry">
-                    <label>Email</label>
-                    <input type="email" required />
-                </section>
+            <div class="card-holder">
+                <div class="contact-card">
+                    <a href="mailto:william.koelling@gmail.com">
+                        <i class="fa fa-envelope" style="font-size: 48px;"></i>
+                        <label>Email Me</label>
+                    </a>
+                </div>
     
-                <section class="form-entry">
-                    <label>Fullname</label>
-                    <input type="text" required />
-                </section>
-                
-                <section class="form-entry">
-                    <label for="inquiries">Inquiry</label>
-                    <textarea name="" id="inquiries" cols="30" rows="3" placeholder="..."></textarea>
-                </section>
+                <div class="contact-card">
+                    <a href="https://github.com/wlk-dev" target="_blank">
+                        <i class="fa fa-github" style="font-size: 46px;"></i>
+                        <label>My GitHub</label>
+                    </a>
+                </div>
 
-            </form>
-
+                <div class="contact-card">
+                    <a href="">
+                        <i class="fa fa-linkedin-square" style="font-size: 46px"></i>
+                        <label for="">LinkedIn</label>
+                    </a>
+                </div>
+            </div>
+            
         </section> 
     </main>
 
