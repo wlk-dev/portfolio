@@ -66,14 +66,14 @@ section.about {
 }
 
 section.about img {
-    margin-top: 2%;
+    margin: 5% 0;
     max-width: 25vw;
     max-height: 35vh;
     border: 1px solid black;
     box-shadow: 0 0 5px black;
 }
 
-/* [About Me] image selector "logic" */
+/* [About Me] image selector "logic" and lightbox*/
 .image2 {
     display: none;
 }
@@ -93,6 +93,48 @@ input[type="radio"] {
 #pict2[type="radio"]:checked ~ .image1 {
     display: none;
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+  
+#image1-ref:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image2-ref:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox .lb {
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lb-1 {
+    background-image: url("../imgs/hiking-1.jpg");
+}
+
+.lb-2 {
+    background-image: url("../imgs/hiking-2.jpg");
+}
+
 /* [About Me] END */
 
 
