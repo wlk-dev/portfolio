@@ -242,4 +242,22 @@ footer h2 a:hover {
     footer {
         position: fixed;    /* I was having trouble with the body extending over the footer at lower resolutions */
     }                       /* I tried a bunch of other stuff but this seemed like the best fix */
+    main {
+        padding: 5% 0;
+    }
+
+    header {
+        padding: 1.5% 10%;
+    }
+
+    section.content {
+        margin: 3% 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.content {
+        margin: 3% 2%;
+    }
+
 }
