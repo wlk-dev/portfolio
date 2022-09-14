@@ -9,13 +9,13 @@ header {
     position: fixed;
     z-index: 10;
     width: 100%;
-    padding: 1.5% 15%;
+    padding: 1.5% 22%;
     background-color: bisque;
     box-shadow: 0 0 10px black;
 }
 
 header nav a {
-    margin-right: 5%;
+    margin-right: 7%;
     font-size: larger;
     text-decoration: underline;
     color: black
@@ -39,6 +39,8 @@ main {
     flex-direction: column;
     padding: 5% 15%;
     margin-top: 5%;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 h2.main-header {
@@ -59,6 +61,17 @@ section.about, section.work, section.contact {
     padding: 4.5%;
     box-shadow: 0 0 10px black;
     background-color:antiquewhite;
+}
+
+section.work {
+    justify-content: center;
+    align-items: center;
+}
+
+section.work img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 2%;
 }
 
 section.about {
@@ -169,16 +182,16 @@ div.contact-card a:hover, div.contact-card a i:hover {
 
 /* Footer Styling */
 footer {
-    bottom: 0;
     display: flex;
-    position: fixed;
+    bottom: 0;
     width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding: .5% 0;
     box-shadow: 0 0 10px black;
     background-color: bisque;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 2px;
 }
 
 footer h2 {
@@ -201,3 +214,9 @@ footer h2 a:hover {
     font-weight: 500;
 }
 /* END */
+
+@media screen and (max-width: 982px) {
+    footer {
+        position: fixed;    /* I was having trouble with the body extending over the footer at lower resolutions */
+    }                       /* I tried a bunch of other stuff but this seemed like the best fix */
+}
