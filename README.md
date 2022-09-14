@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-[Deployed Page]()
+[Deployed Page](https://wlk-dev.github.io/portfolio/)
 
 ## Credits
 
