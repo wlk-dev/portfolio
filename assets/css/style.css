@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     position: fixed;
     z-index: 10;
