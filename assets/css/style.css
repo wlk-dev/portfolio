@@ -164,6 +164,17 @@ input[type="radio"] {
 
 
 /*[Contact Me] cards and card holder */
+section.contact {
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact img {
+    max-width: 15vw;
+    margin-bottom: 1%;
+    box-shadow: 0 0 5px black;
+}
+
 div.card-holder {
     display: flex;
     flex-direction: row;
