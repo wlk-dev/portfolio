@@ -86,6 +86,37 @@ section.work img {
     box-shadow: 0 0 5px black;
 }
 
+div.work-card {
+    padding: 5%;
+    background-color: bisque;
+    box-shadow: 0 0 7px black;
+    border-radius: 5px;
+}
+
+div.work-card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bold;
+    color: coral;
+    /* padding: 2%; */
+}
+
+div.work-card a i {
+    margin-bottom: 15%;
+    color: coral;
+    text-shadow: 2px 2px black;
+}
+
+div.work-card a:hover, div.work-card a i:hover {
+    color: black;
+    transition: 0.6s;
+}
+
+div.work-card a i:hover {
+    text-shadow: 2px 2px coral;
+}
+
 section.about {
     align-items: center;
 }
@@ -94,7 +125,6 @@ section.about img {
     margin: 5% 0;
     max-width: 50%;
     max-height: 50%;
-    /* border: 1px solid black; */
     box-shadow: 0 0 5px black;
 }
 
@@ -159,7 +189,6 @@ input[type="radio"] {
 .lb-2 {
     background-image: url("../imgs/hiking-2.jpg");
 }
-
 /* [About Me] END */
 
 
@@ -199,7 +228,8 @@ div.contact-card a i {
 
 div.contact-card a:hover, div.contact-card a i:hover {
     text-decoration: none;
-    color:coral
+    color:coral;
+    transition: 0.6s;
 }
 /*[Contact Me] END */
 
@@ -230,6 +260,7 @@ footer h2 a {
 
 footer h2 a:hover {
     color: coral;
+    transition: 0.6s;
 }
 
 #dev-name {
