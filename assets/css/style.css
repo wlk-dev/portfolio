@@ -127,6 +127,7 @@ div.work-card a i {
     margin-bottom: 15%;
     color: coral;
     text-shadow: 2px 2px black;
+    transition: 0.7s;
 }
 
 div.work-card a i:hover, div.work-card a:hover > i{
@@ -227,6 +228,13 @@ section.contact img {
     max-width: 15vw;
     margin-bottom: 1%;
     box-shadow: 0 0 5px black;
+    transition: .5s;
+
+}
+
+section.contact img:hover {
+    transform: translateY(-1%);
+    transition: .5s;
 }
 
 div.card-holder {
