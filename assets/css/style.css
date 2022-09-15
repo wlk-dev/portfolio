@@ -14,20 +14,23 @@ header {
     z-index: 10;
     width: 100%;
     padding: 1.5% 22%;
-    background-color: bisque;
+    background-color: #ffe4c4;
     box-shadow: 0 0 10px black;
+    background-image: url("../imgs/inspiration-geometry.png");
 }
 
 header nav a {
     margin-right: 7%;
     font-size: larger;
     text-decoration: underline;
-    color: black
+    color: black;
+    transition: .2s;
 }
 
 header nav a:hover {
     color: coral;
     text-decoration: overline;
+    transition: .2s;
 }
 
 body {
@@ -66,6 +69,7 @@ section.content {
     flex-direction: column;
     text-align: center;
     margin: 3% 13%;
+    background-image : url("../imgs/cubes.png");
 }
 
 section.about, section.work, section.contact {
@@ -87,7 +91,7 @@ section.work img {
 }
 
 div.work-card {
-    flex: 1 0 70%;
+    flex: 1 0 100%;
     margin: 2% 1%;
     padding: 5%;
     margin: 10% 6%;
@@ -107,10 +111,17 @@ div.work-card a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    font-weight: bold;
-    color: coral;
+    color: black;
+    font-family: sans-serif
 }
 
+div.work-card a:hover {
+    color: coral;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    transition: 0.6s;
+}
 
 div.work-card a i {
     margin-bottom: 15%;
@@ -118,13 +129,11 @@ div.work-card a i {
     text-shadow: 2px 2px black;
 }
 
-div.work-card a:hover, div.work-card a i:hover {
+div.work-card a i:hover, div.work-card a:hover > i{
     color: black;
-    transition: 0.6s;
-}
-
-div.work-card a i:hover {
-    text-shadow: 2px 2px coral;
+    text-shadow: none;
+    transform: rotate(180deg);
+    transition: 0.7s;
 }
 
 section.about {
@@ -264,6 +273,7 @@ footer {
     justify-content: center;
     align-self: center;
     border-radius: 2px;
+    background-image: url("../imgs/inspiration-geometry.png");
 }
 
 footer h2 {
@@ -290,7 +300,7 @@ footer h2 a:hover {
 
 @media screen and (max-width: 982px) {
     div.work-card {
-        flex: 0 0 50%
+        flex: 0 0 50%;
     }
 
     footer {
