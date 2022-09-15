@@ -225,7 +225,7 @@ section.contact {
 }
 
 section.contact img {
-    max-width: 15vw;
+    max-width: 40%;
     margin-bottom: 1%;
     box-shadow: 0 0 5px black;
     transition: .5s;
