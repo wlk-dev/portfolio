@@ -87,10 +87,20 @@ section.work img {
 }
 
 div.work-card {
+    flex: 1 0 70%;
+    margin: 2% 1%;
     padding: 5%;
+    margin: 10% 6%;
     background-color: bisque;
     box-shadow: 0 0 7px black;
     border-radius: 5px;
+    transition: .6s;
+}
+
+div.work-card:hover {
+    transform: scale(1.1);
+    background-color: whitesmoke;
+    transition: .6s;
 }
 
 div.work-card a {
@@ -99,8 +109,8 @@ div.work-card a {
     text-decoration: none;
     font-weight: bold;
     color: coral;
-    /* padding: 2%; */
 }
+
 
 div.work-card a i {
     margin-bottom: 15%;
@@ -126,6 +136,12 @@ section.about img {
     max-width: 50%;
     max-height: 50%;
     box-shadow: 0 0 5px black;
+    transition: 0.6s;
+}
+
+section.about img:hover {
+    transform: scale(1.1);
+    transition: .6s;
 }
 
 /* [About Me] image selector "logic" and lightbox*/
@@ -219,17 +235,20 @@ div.contact-card a {
     flex-direction: column;
     text-decoration: none;
     color: black;
+    transition: 0.6s;
 }
 
 div.contact-card a i {
     margin-bottom: 15%;
     color: black;
+    transition: 0.6s;
 }
 
 div.contact-card a:hover, div.contact-card a i:hover {
     text-decoration: none;
     color:coral;
     transition: 0.6s;
+    transform: translateY(2%);
 }
 /*[Contact Me] END */
 
@@ -270,6 +289,10 @@ footer h2 a:hover {
 /* END */
 
 @media screen and (max-width: 982px) {
+    div.work-card {
+        flex: 0 0 50%
+    }
+
     footer {
         position: fixed;    /* I was having trouble with the body extending over the footer at lower resolutions */
     }                       /* I tried a bunch of other stuff but this seemed like the best fix */
